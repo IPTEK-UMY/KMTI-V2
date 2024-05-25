@@ -30,6 +30,7 @@ import { MdGroups2 } from "react-icons/md";
 import { GrObjectUngroup } from "react-icons/gr";
 import { MdOutlineWork } from "react-icons/md";
 import { LuAlignEndVertical } from "react-icons/lu";
+import { BiSolidToTop } from "react-icons/bi";
 
 
 
@@ -81,8 +82,10 @@ const Home = () => {
   return (
     <>
 
-
-      <section className="parallax-home" id='home'>
+<a href='#home' id="scrollToTopBtn" class="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded-full hover:shadow-xl hover:bg-blue-700 hover:shadow-[#67ccff] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+    <BiSolidToTop />
+    </a>
+      <section className="parallax-home w-full h-screen overflow-hidden" id='home'>
         <img src={sky} alt="" />
         <img src={moon} alt="" id="moon"/>
         <img src={water} alt="" />
@@ -96,20 +99,12 @@ const Home = () => {
         <img src={hillright} alt="" />
       </section>
       <section className="about" id="about">
-        <div className="info-box">
-          <span class="a">A</span>
-          <span class="b">B</span>
-          <span class="c">O</span>
-          <span class="d">U</span>
-          <span class="e">T</span>
-          
-          <span class="f">K</span>
-          <span class="g">M</span>
-          <span class="h">T</span>
-          <span class="i">I</span>
+        <div className="info-box flex-col container">
+          <h3 className='text-[2rem] py-4'>ABOUT  KMTI</h3>
+          <hr className='py-3' />
           <div class="flex-col container py-30 my-14 bgkmti">
           <img src={kmtibg} alt="bgkmti" className='object-cover' /> 
-          <p>
+          <p className='text-justify px-10 py-10'>
           Keluarga Mahasiswa Teknologi Informasi atau biasa dikenal dengan KMTI, merupakan organisasi yang berada di dalam Program Studi Teknologi Informasi 
 Universitas Muhammadiyah Yogyakarta. KMTI adalah organisasi tunggal dan independen. Dengan nama Keluarga Mahasiswa Teknologi Informasi, KMTI memiliki peran yang sangat penting dalam membangun rasa kekeluargaan serta menghimpun seluruh mahasiswa yang ada di dalam Program Studi Teknologi Informasi UMY. Selain itu, KMTI juga bertanggung jawab untuk menjadi jembatan penghubung antara mahasiswa dengan pimpinan Program Studi Teknologi Informasi UMY. Program Studi Teknologi Informasi
 juga termasuk di dalam Fakultas Teknik, maka dari itu KMTI merupakan 
@@ -124,9 +119,9 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
       <div class="container-nav">
         <nav class="oval-navbar">
             <ul>
-                <li><a href="#"><GrObjectUngroup /> 60 Anggota Divisi</a></li>
-                <li><a href="#"><MdGroups2 /> 9 divisi</a></li>
-                <li><a href="#"><MdOutlineWork /> 32 Program Kerja</a></li>
+                <li><a href="#"> 60 Anggota Divisi</a></li>
+                <li><a href="#">9 divisi</a></li>
+                <li><a href="#"> 32 Program Kerja</a></li>
             </ul>
         </nav>
     </div>
@@ -190,10 +185,10 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
     </div>
       </section>
 
-      <footer className="footer">
-    <div className="footer-left">
+      <footer className="footer md:flex-row flex-col md:text-left text-center">
+    <div className="footer-left px-6">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1696482899447!2d110.36748581432085!3d-7.782395679393118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58417b009bc9%3A0xc49c0b07dfdb7ac5!2sUniversitas%20Muhammadiyah%20Yogyakarta!5e0!3m2!1sen!2sid!4v1646015250406!5m2!1sen!2sid
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.801525542429!2d110.31928597484443!3d-7.8108234922096225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af80f28426fb3%3A0x72412294845ee8b4!2sUniversitas%20Muhammadiyah%20Yogyakarta!5e0!3m2!1sid!2sid!4v1716617680838!5m2!1sid!2sid
             " 
             width="300" 
             height="200" 
@@ -202,12 +197,11 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
             loading="lazy">
         </iframe>
     </div>
-    <div className="footer-right">
-        <div className="contact-info">
-            <h3></h3>© KMTI Periode 23/24, All Rights Reserved
-            <p>Alamat</p>
+    <div className="footer-right flex-col px-2">
+        <div className="contact-info py-2">
+            <h3></h3>© KMTI Periode 23/24
         </div>
-        <div className="description">
+        <div className="description ">
             <p>Jl. Brawijaya, Geblagan, Tamantirto, Kec. Kasihan,
 Kabupaten Bantul, Daerah Istimewa Yogyakarta 55183</p>
         </div>

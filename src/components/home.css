@@ -3,9 +3,7 @@
   section {
     min-height: 100vh;
   }
-  section.parallax-home{
-    max-width: 1480px;
-  }
+
   .parallax-home{
     position: relative;
     display: flex;
