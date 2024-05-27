@@ -11,12 +11,12 @@ function Ph() {
   return (
     <>
       <section className="mx-w-full">
-  <div className="flex-row py-[10rem] px-24">
+  <div className="md:flex-row md:py-[4rem] md:pt-[8rem] pt-[8rem] py-[4rem] px-4 md:px-24">
     <h1 className="text-[3rem]">Ph</h1>
     <h1>Pengurus Harian</h1>
     <hr />
     <div className="py-8 Ph flex justify-center">
-      <img src={Phbg} alt="bg-ph" className="w-3/4 " />
+      <img src={Phbg} alt="bg-ph" className="md:w-3/4 " />
     </div>
     <hr />
     <div className="flex-row py-10">
@@ -63,59 +63,64 @@ function Ph() {
     </div>
     </div>
 
-    <div className="flex-row py-10">
-      <h1 className="text-[3rem]">Proker</h1>
-      <hr className="w-[2rem] md:w-[9rem] font-bold mb-4 border-2" />
+    <div className="flex-row md:py-10 py-5">
+      <h1 className="md:text-[3rem] text-[2rem]">Proker</h1>
+      <hr className="w-[4rem] md:w-[9rem] font-bold mb-4 border-2" />
     </div>
 
     <div className="flex-col">
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">Rapat kerja</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">Rapat kerja</h2>
       <p>rapat setiap bulan</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">tri wulan</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">tri wulan</h2>
       <p>Rapat setiap 3 bulan sekali dan lpj</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">rapat besar</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">rapat besar</h2>
       <p>setiap akhir bulan</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">kongres ketua angkatan 2023</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">kongres ketua angkatan 2023</h2>
       <p>minggu kedua di bulan november 2023</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">kongres pemilihan ketua IT Specta XII</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">kongres pemilihan ketua IT Specta XII</h2>
       <p>minggu kedua di bulan november 2023</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">IT Specta</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">IT Specta</h2>
       <p>Januari - Maret 2024</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">kongres ketua mataf prodi</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">kongres ketua mataf prodi</h2>
       <p>3 bulan sebelum mataf universitas di bulan juni 2022</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">sinan</h2>
+        <h2 className="font-bold md:text-[2rem] text-[20px]">sinan</h2>
       <p>di minggu bulan agustus 2024</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">panitia pelantikan periode 2024/2025</h2>
+        <h2 className="font-bold text-[2rem]md:text-[2rem] text-[20px]">panitia pelantikan periode 2024/2025</h2>
       <p>di minggu kedua atau ketiga bulan september</p>
       </div>
     </div>
   </div>
 </section>
+<footer className="bg-gray-800 text-white py-4 text-center">
+      <div className="container mx-auto">
+        <p>&copy; 2024 . All rights reserved.</p>
+      </div>
+    </footer>
 
     </>
   );
