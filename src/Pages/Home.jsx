@@ -31,6 +31,9 @@ import { GrObjectUngroup } from "react-icons/gr";
 import { MdOutlineWork } from "react-icons/md";
 import { LuAlignEndVertical } from "react-icons/lu";
 import { BiSolidToTop } from "react-icons/bi";
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom'
 
 
 
@@ -40,8 +43,34 @@ const Home = () => {
 
   // Function to toggle visibility of navigation list
 
+  const FadeInWhenVisible = ({ children }) => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
 
+    React.useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, inView]);
 
+    const variants = {
+        visible: { opacity: 1, translateY: 0, transition: { duration: 1.5 } },
+        hidden: { opacity: 0, translateY: 0 }
+    };
+
+    return (
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={controls}
+            variants={variants}
+        >
+            {children}
+        </motion.div>
+    );
+};
   useEffect(() => {
     // Memanggil elemen DOM di dalam useEffect untuk memastikan bahwa elemen tersebut sudah ada dalam DOM saat diakses
     let moonElement = document.getElementById('moon');
@@ -89,7 +118,7 @@ const Home = () => {
         <img src={sky} alt="" />
         <img src={moon} alt="" id="moon"/>
         <img src={water} alt="" />
-        <img src={center} alt="" />
+        <img src={center} alt=""  />
         <img src={right} alt="" />
         <img src={left} alt="" />
         <img src={train} alt="" id="train"/>
@@ -103,19 +132,24 @@ const Home = () => {
           <h3 className='text-[2rem] py-4'>ABOUT  KMTI</h3>
           <hr className='py-3' />
           <div class="flex-col container py-30 my-14 bgkmti">
+          <FadeInWhenVisible>
           <img src={kmtibg} alt="bgkmti" className='object-cover' /> 
+          </FadeInWhenVisible>
+          <FadeInWhenVisible>
           <p className='text-justify px-10 py-10'>
           Keluarga Mahasiswa Teknologi Informasi atau biasa dikenal dengan KMTI, merupakan organisasi yang berada di dalam Program Studi Teknologi Informasi 
 Universitas Muhammadiyah Yogyakarta. KMTI adalah organisasi tunggal dan independen. Dengan nama Keluarga Mahasiswa Teknologi Informasi, KMTI memiliki peran yang sangat penting dalam membangun rasa kekeluargaan serta menghimpun seluruh mahasiswa yang ada di dalam Program Studi Teknologi Informasi UMY. Selain itu, KMTI juga bertanggung jawab untuk menjadi jembatan penghubung antara mahasiswa dengan pimpinan Program Studi Teknologi Informasi UMY. Program Studi Teknologi Informasi
 juga termasuk di dalam Fakultas Teknik, maka dari itu KMTI merupakan 
 bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
           </p>
+          </FadeInWhenVisible>
           </div>
         </div>
 
       </section>
 
       <section id='divisi'>
+            <FadeInWhenVisible>
       <div class="container-nav">
         <nav class="oval-navbar">
             <ul>
@@ -125,11 +159,15 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
             </ul>
         </nav>
     </div>
+                </FadeInWhenVisible>
+                <FadeInWhenVisible>
       <div class="container-divisi">
         <h3 class="section-title">Our Divisi</h3>
         <div class="gambar-container">
         <div class="gambar">
+        <Link to="/Ph">
         <img src={ph} alt="" />
+        </Link>
         </div>
         <div class="gambar">
         <img src={kastrad} alt="" />
@@ -154,7 +192,8 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
         </div>
         </div>
     </div>
-
+    </FadeInWhenVisible>
+    <FadeInWhenVisible>
     <div className="container-event" id='event'>
       <h2 className="text-center font-bold text-[2rem]">
          O U R  EVENT:
@@ -183,6 +222,7 @@ bagian dari Keluarga Mahasiswa Fakultas Teknik atau biasa dikenal dengan KMFT.
         </div>
       </div>
     </div>
+    </FadeInWhenVisible>
       </section>
 
       <footer className="footer md:flex-row flex-col md:text-left text-center">
