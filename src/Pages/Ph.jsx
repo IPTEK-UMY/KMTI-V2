@@ -28,36 +28,36 @@ function Ph() {
       <div className="card flex flex-col w-[20rem] items-center p-4 border rounded-lg shadow-lg">
         <img src={salman} alt="salman" className="w-full h-auto mb-4" />
         <div className="text-center">
-          <h2 className="text-xl font-bold">Member Name 1</h2>
-          <p className="text-md">Description of member 1.</p>
+          <h2 className="text-xl font-bold">Salman firdaus</h2>
+          <p className="text-md">ketua himpunan kmti</p>
         </div>
       </div>
       <div className="card flex flex-col w-[20rem] items-center p-4 border rounded-lg shadow-lg">
         <img src={mei} alt="mei" className="w-full h-auto mb-4" />
         <div className="text-center">
-          <h2 className="text-xl font-bold">Member Name 2</h2>
-          <p className="text-md">Description of member 2.</p>
+          <h2 className="text-xl font-bold">Mei Tri Cahyani</h2>
+          <p className="text-md">sekretaris jendral</p>
         </div>
       </div>
       <div className="card flex flex-col w-[20rem] items-center p-4 border rounded-lg shadow-lg">
         <img src={caca} alt="caca" className="w-full h-auto mb-4" />
         <div className="text-center">
-          <h2 className="text-xl font-bold">Member Name 3</h2>
-          <p className="text-md">Description of member 3.</p>
+          <h2 className="text-xl font-bold">Dhiya ulhaq</h2>
+          <p className="text-md">Bendahara</p>
         </div>
       </div>
       <div className="card flex flex-col w-[20rem] items-center border rounded-lg shadow-lg">
         <img src={yoga} alt="yoga" className="w-full h-auto mb-4" />
         <div className="text-center">
-          <h2 className="text-xl font-bold">Member Name 4</h2>
-          <p className="text-md">Description of member 4.</p>
+          <h2 className="text-xl font-bold">Yoga Prasetya</h2>
+          <p className="text-md">wakil ketua kmti</p>
         </div>
       </div>
       <div className="card flex flex-col w-[20rem] items-center border rounded-lg shadow-lg">
         <img src={amel} alt="amel" className="w-full h-auto mb-4" />
         <div className="text-center">
-          <h2 className="text-xl font-bold">Member Name 4</h2>
-          <p className="text-md">Description of member 4.</p>
+          <h2 className="text-xl font-bold">Ikhda Amalia</h2>
+          <p className="text-md">Sekretaris Utama</p>
         </div>
       </div>
     </div>
@@ -70,18 +70,48 @@ function Ph() {
 
     <div className="flex-col">
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">proker1</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate repellendus esse tenetur voluptas quis necessitatibus autem fugit, velit sit, consequatur labore. Omnis alias quos saepe id vel voluptates? Aliquid!</p>
+        <h2 className="font-bold text-[2rem]">Rapat kerja</h2>
+      <p>rapat setiap bulan</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">proker1</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate repellendus esse tenetur voluptas quis necessitatibus autem fugit, velit sit, consequatur labore. Omnis alias quos saepe id vel voluptates? Aliquid!</p>
+        <h2 className="font-bold text-[2rem]">tri wulan</h2>
+      <p>Rapat setiap 3 bulan sekali dan lpj</p>
       </div>
 
       <div className="border px-4 py-4 my-6 rounded-xl">
-        <h2 className="font-bold text-[2rem]">proker1</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate repellendus esse tenetur voluptas quis necessitatibus autem fugit, velit sit, consequatur labore. Omnis alias quos saepe id vel voluptates? Aliquid!</p>
+        <h2 className="font-bold text-[2rem]">rapat besar</h2>
+      <p>setiap akhir bulan</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">kongres ketua angkatan 2023</h2>
+      <p>minggu kedua di bulan november 2023</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">kongres pemilihan ketua IT Specta XII</h2>
+      <p>minggu kedua di bulan november 2023</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">IT Specta</h2>
+      <p>Januari - Maret 2024</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">kongres ketua mataf prodi</h2>
+      <p>3 bulan sebelum mataf universitas di bulan juni 2022</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">sinan</h2>
+      <p>di minggu bulan agustus 2024</p>
+      </div>
+
+      <div className="border px-4 py-4 my-6 rounded-xl">
+        <h2 className="font-bold text-[2rem]">panitia pelantikan periode 2024/2025</h2>
+      <p>di minggu kedua atau ketiga bulan september</p>
       </div>
     </div>
   </div>
