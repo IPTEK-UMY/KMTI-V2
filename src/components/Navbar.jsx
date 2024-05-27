@@ -27,7 +27,6 @@ function navbar() {
                   <Link to="/" className="bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950">home</Link>
                   <a href='#about' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>about</a>
                   <a href='#divisi' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>division</a>
-                  <a href='#event' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>Event</a>
                   <a href='' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>IT Research</a>
                   <a href='' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>Study More</a>
                 </ul>
@@ -37,10 +36,9 @@ function navbar() {
         </div>
                 {isOpen && (
                 <ul className='md:hidden absolute flex flex-col h-fit bg-black bg-opacity-75 px-8 pt-24 gap-y-2 z-0 top-0 left-0 w-full pb-6'>
-                  <a href='#' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>home</a>
+                  <Link to='/' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>home</Link>
                   <a href="" className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>about</a>
                   <a href='#divisi' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>division</a>
-                  <a href='#event' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>Event</a>
                   <a href='' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>IT Research</a>
                   <a href='' className='bg-transparent px-3 py-1 rounded-2xl border-solid border-2 border-[#67ccff] hover:bg-[#67ccff] hover:shadow-lg hover:shadow-[#67ccff] hover:text-slate-950'>Study More</a>
                 </ul>)}
